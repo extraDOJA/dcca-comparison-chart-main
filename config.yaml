@@ -1,0 +1,21 @@
+credentials:
+  usernames:
+    your_username:            # Replace "your_username" with the actual username
+      email: user@example.com # Replace with the user's email
+      first_name: FirstName   # Replace with the user's first name
+      last_name: LastName     # Replace with the user's last name
+      password: plain_text_password # Replace with a plain text password (it will be hashed automatically)
+
+cookie:
+  name: your_cookie_name      # Choose a unique name for the cookie
+  key: random_key             # Use a unique random key for security
+  expiry_days: 30             # Set to the number of days, or 0 if no re-authentication needed
+
+preauthorized: []             # If not using preauthorized emails, set as an empty list
+
+# Optional OAuth2 configuration
+oauth2:
+  provider: example_provider
+  client_id: your_client_id
+  client_secret: your_client_secret
+  redirect_uri: your_redirect_uri
